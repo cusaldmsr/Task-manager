@@ -21,9 +21,10 @@ type TaskListScreenNavigationProp = NativeStackNavigationProp<RootStackParamList
 
 interface Props {
   navigation: TaskListScreenNavigationProp;
+  setIsLoggedIn?: (val: boolean) => void;
 }
 
-const TaskListScreen: React.FC<Props> = ({ navigation }) => {
+const TaskListScreen: React.FC<Props> = ({ navigation, setIsLoggedIn }) => {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
