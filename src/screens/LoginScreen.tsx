@@ -21,9 +21,10 @@ type LoginScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, '
 
 interface Props {
   navigation: LoginScreenNavigationProp;
+    setIsLoggedIn: (val: boolean) => void;
 }
 
-const LoginScreen: React.FC<Props> = ({ navigation }) => {
+const LoginScreen: React.FC<Props> = ({ navigation, setIsLoggedIn }) => {
   const [isLogin, setIsLogin] = useState(true);
   const [loading, setLoading] = useState(false);
   
@@ -95,8 +96,8 @@ const LoginScreen: React.FC<Props> = ({ navigation }) => {
         if (response.data.token) {
           await storageService.saveUserToken(response.data.token);
         }
+        setIsLoggedIn(true);
         Alert.alert('Success', 'Login successful!');
-        navigation.replace('TaskList');
         clearLoginForm();
       } else {
         Alert.alert('Login Failed', response.message || 'Invalid credentials');
