@@ -59,18 +59,18 @@ export default function App() {
         {!isLoggedIn ? (
           <Stack.Screen 
             name="Login" 
-            component={LoginScreen} 
             options={{ headerShown: false }}
+            children={props => <LoginScreen {...props} setIsLoggedIn={setIsLoggedIn} />}
           />
         ) : (
           <>
             <Stack.Screen 
               name="TaskList" 
-              component={TaskListScreen}
               options={{ 
                 title: 'My Tasks',
                 headerLeft: () => null, // Disable back button
               }}
+              children={props => <TaskListScreen {...props} setIsLoggedIn={setIsLoggedIn} />}
             />
             <Stack.Screen 
               name="AddTask" 
