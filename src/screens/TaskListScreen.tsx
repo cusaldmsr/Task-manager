@@ -190,7 +190,7 @@ const TaskListScreen: React.FC<Props> = ({ navigation, setIsLoggedIn }) => {
           style: 'destructive',
           onPress: async () => {
             await storageService.clearAllData();
-            navigation.replace('Login');
+            if (setIsLoggedIn) setIsLoggedIn(false);
           },
         },
       ]
