@@ -23,6 +23,7 @@ A cross-platform mobile Task Manager built with React Native and Expo.
 - React Navigation
 - AsyncStorage
 - REST API (see `src/services/api.ts`)
+- **Backend:** JavaEE with Hibernate ([TaskManagerApp-Backend](https://github.com/cusaldmsr/TaskManagerApp-Backend))
 
 ## Project Structure
 
@@ -76,7 +77,11 @@ A cross-platform mobile Task Manager built with React Native and Expo.
    - For iOS: `npm run ios`
    - For Web: `npm run web`
 
-### API Configuration
+### Backend Repository
+
+The backend for this project is built with JavaEE and Hibernate. You can find the source code and setup instructions here:
+
+- [TaskManagerApp-Backend](https://github.com/cusaldmsr/TaskManagerApp-Backend)
 
 Update the API base URL in `src/utils/constants.ts` if your backend endpoint changes.
 
