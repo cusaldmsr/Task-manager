@@ -6,6 +6,12 @@ Task Manager App is a cross-platform mobile application built with React Native 
 
 A cross-platform mobile Task Manager built with React Native and Expo.
 
+## Demo
+
+Check out a video demo of the app:
+
+(https://github.com/user-attachments/assets/99f35291-4eb1-400f-a372-8d29adea8e1c)
+
 ## Features
 
 - User authentication (login/register)
