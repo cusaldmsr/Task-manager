@@ -1,5 +1,5 @@
 // API Configuration
-export const API_BASE_URL = 'https://5e46b53551b4.ngrok-free.app/TaskManager'; // Adjust port if different
+export const API_BASE_URL = 'https://0d0ecb4463a2.ngrok-free.app/TaskManager'; // Adjust port if different
 export const API_ENDPOINTS = {
   // User endpoints
   LOGIN: '/api/user/login',
