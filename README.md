@@ -10,7 +10,11 @@ A cross-platform mobile Task Manager built with React Native and Expo.
 
 Check out a video demo of the app:
 
-(https://github.com/user-attachments/assets/99f35291-4eb1-400f-a372-8d29adea8e1c)
+
+
+https://github.com/user-attachments/assets/094fb747-afff-4e13-94c2-317ebab8d753
+
+
 
 ## Features
 
@@ -68,17 +72,24 @@ Check out a video demo of the app:
 1. Clone the repository:
    ```sh
    git clone https://github.com/cusaldmsr/Task-manager.git
+   ```
+2. Change directory:
+   ```sh
    cd Task-manager
    ```
-2. Install dependencies:
+3. Install dependencies:
    ```sh
    npm install
    ```
-3. Start the development server:
+4. Start the development server:
    ```sh
    npm start
    ```
-4. Run on your device:
+5. Start expo:
+   ```sh
+   npx expo start
+   ```
+6. Run on your device:
    - For Android: `npm run android`
    - For iOS: `npm run ios`
    - For Web: `npm run web`
