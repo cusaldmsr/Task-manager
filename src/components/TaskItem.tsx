@@ -32,18 +32,13 @@ const TaskItem: React.FC<Props> = ({ task, onEdit, onDelete, onStatusChange }) =
 
 const formatDate = (dateString: string): string => {
   try {
-    // Handle different date formats that might come from the backend
     let date: Date;
-    
-    // If dateString is already a number (timestamp)
     if (!isNaN(Number(dateString))) {
       date = new Date(Number(dateString));
     } else {
-      // Try parsing as string, handle potential timezone issues
       date = new Date(dateString);
     }
-    
-    // Check if date is valid
+
     if (isNaN(date.getTime())) {
       return 'Invalid Date';
     }

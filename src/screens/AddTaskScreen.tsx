@@ -63,7 +63,6 @@ const AddTaskScreen: React.FC<Props> = ({ navigation, route }) => {
       }
     } catch (error) {
       console.error('Error loading task statuses:', error);
-      // Use default statuses if API fails
     }
   };
 
@@ -111,6 +110,7 @@ const AddTaskScreen: React.FC<Props> = ({ navigation, route }) => {
     setLoading(true);
     try {
       if (isEdit && taskId) {
+
         // Update existing task
         const updateData: TaskUpdateRequest = {
           id: taskId,
@@ -128,6 +128,7 @@ const AddTaskScreen: React.FC<Props> = ({ navigation, route }) => {
           Alert.alert('Error', response.message || 'Failed to update task');
         }
       } else {
+        
         // Create new task
         const createData: TaskCreateRequest = {
           title: title.trim(),
