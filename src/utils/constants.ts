@@ -1,6 +1,7 @@
 // API Configuration
-export const API_BASE_URL = 'https://0d0ecb4463a2.ngrok-free.app/TaskManager'; // Adjust port if different
+export const API_BASE_URL = 'https://578f5457c66e.ngrok-free.app/TaskManager';
 export const API_ENDPOINTS = {
+
   // User endpoints
   LOGIN: '/api/user/login',
   REGISTER: '/api/user/register',
@@ -23,8 +24,8 @@ export const DEFAULT_TASK_STATUSES = [
 
 // App Configuration
 export const APP_CONFIG = {
-  REQUEST_TIMEOUT: 10000, // 10 seconds
-  MAX_TITLE_LENGTH: 15, // As defined in your Task entity
+  REQUEST_TIMEOUT: 10000, 
+  MAX_TITLE_LENGTH: 15, 
   MAX_USERNAME_LENGTH: 45,
   MAX_EMAIL_LENGTH: 100,
   MAX_PASSWORD_LENGTH: 20,
