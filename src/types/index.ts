@@ -3,7 +3,7 @@ export interface User {
   id: number;
   username: string;
   email: string;
-  password?: string; // Optional for responses
+  password?: string;
   created_at: string;
 }
 
@@ -61,7 +61,7 @@ export interface LoginResponse {
   token?: string;
 }
 
-// Navigation types (already defined in App.tsx but including here for reference)
+// Navigation types
 export type RootStackParamList = {
   Login: undefined;
   TaskList: undefined;
