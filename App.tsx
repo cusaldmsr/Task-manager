@@ -38,7 +38,7 @@ export default function App() {
   };
 
   if (isLoading) {
-    return null; // You can add a loading screen here if needed
+    return null; 
   }
 
   return (
